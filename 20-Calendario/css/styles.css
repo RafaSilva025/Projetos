@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-image: url(https://images6.alphacoders.com/338/thumb-1920-338596.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+}
+
+.centralizador {
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+}
+
+.cabecalho {
+    padding: 20px;
+}
+
+header h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(172, 102, 61);
+}
+
+.cabecalho header {
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 30px 10px;
+}
+
+header .icone span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+header .icone span:hover {
+    background: rgb(201, 135, 97);
+}
+
+header span:last-child {
+    margin-right: -10px;
+}
+
+.calendario ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.diasDaSemana ul li {
+    width: calc(100% / 7);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(172, 102, 61);
+}
+
+.dias li {
+    font-size: 18px;
+    width: calc(100% / 7);
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.calendario .dias li::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendario .dias li:hover::before {
+    background: #f2f2f2;
+}
+
+.calendario .dias li.ativo::before {
+    background: rgb(201, 135, 97);
+}
+
+.dias li.desativo {
+    color: rgb(190, 188, 188);
+}
+
+.dias li.ativo {
+    color: rgb(255, 248, 248);
+}
+
+@media screen and (max-width: 1024px) {
+    .calendario header{
+        font-size: 8px;
+    }
+
+    .dias li {
+        font-size: 15px;
+    }
+
+    .centralizador {
+        width: 50%;
+        height: 470px;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calendario header{
+        font-size: 8px;
+    }
+
+    .dias li {
+        font-size: 15px;
+    }
+
+    .centralizador {
+        width: 70%;
+        height: 470px;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho header{
+        font-size: 12px;
+    }
+
+    .dias li {
+        font-size: 13px;
+    }
+
+    .centralizador {
+        width: 100%;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 15px;
+    }
+
+    header .icone span {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cabecalho header{
+        font-size: 10px;
+    }
+
+    .dias li {
+        font-size: 15px;
+    }
+
+    .centralizador {
+        width: 100%;
+        height: 450px;
+    }
+
+    .diasDaSemana ul li {
+        font-size: 12px;
+    }
+
+    header .icone span {
+        height: 22px;
+        width: 22px;
+        line-height: 22px;
+    }
+}

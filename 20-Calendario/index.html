@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="blur"></div>
+    <div class="centralizador">
+        <div class="cabecalho">
+            <header>
+                <h1 class="mes&ano" id="mes&ano"></h1>
+                <div class="icone" id="icone">
+                    <span class="material-symbols-outlined" id="antes">chevron_left</span>
+                    <span class="material-symbols-outlined"
+                        id="depois">chevron_right</span>
+                </div>
+            </header>
+        </div>
+        <div class="calendario">
+            <div class="diasDaSemana" id="diasDaSemana">
+                <ul>
+                    <li>Dom</li>
+                    <li>Seg</li>
+                    <li>Ter</li>
+                    <li>Qua</li>
+                    <li>Qui</li>
+                    <li>Sex</li>
+                    <li>Sáb</li>
+                </ul>
+            </div>
+            <ul class="dias" id="dias"></ul>  
+        </div>
+    </div>
+</body>
+</html>
