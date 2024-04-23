@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Incrementado</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="form-box" id="form-box">
+        <form id="form">
+            <h1>Formulário</h1>
+            
+            <div class="campoTexto" id="campoTexto">
+                <input type="text" name="nome" placeholder="Nome" id="nome">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="email" name="email" placeholder="E-mail" id="email">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="password" name="senha" placeholder="Senha" id="senha">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="password" name="senha" placeholder="Confirmar senha" id="conSenha">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="text" name="endereco" placeholder="Endereço" id="endereco">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="text" name="ano" id="ano" placeholder="Dia" onfocus="this.type='date'" min="2023-01-01" max="2030-12-31">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="text" name="hora" id="hora" placeholder="Horário" onfocus="this.type='time'" onblur="this.type='text'" min="08:00" max="18:00">
+            </div>
+
+            <div class="campoTexto" id="campoTexto">
+                <input type="tel" name="telefone" placeholder="Celular" id="telefone">
+            </div>
+
+            <div class="btn-box">
+                <button class="btn" id="btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="output" id="output">
+        <h1 id="title">Cadastro Feito!</h1>
+        <p id="res"></p>
+        <button class="btn2" id="btn2" onclick="window.location.reload()">Resetar</button>
+    </div>
+</body>
+</html>
