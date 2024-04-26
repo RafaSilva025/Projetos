@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.teto{
+    background-color: brown;
+    width: 100vw;
+    height: 20vh;
+}
+
+.corpo{
+    background-color: blueviolet;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.pg1{
+    background-color: chocolate;
+    width: 70vw;
+
+}
+
+.pg2{
+    background-color: lime;
+    width: 30vw;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    background-color: indigo;
+    width: 100vw;
+    height: 20vh;
+}
+
+.footer1{
+    background-color: cadetblue;
+    width: 25vw;
+}
+.footer2{
+    background-color: hotpink;
+    width: 40vw;
+}
+
+.footer3{
+    background-color: dimgray;
+    width: 35vw;
+}

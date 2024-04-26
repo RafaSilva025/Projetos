@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    color: blueviolet;
+    background-color: black;
+
+}
+
+button{
+    width: 100%;
+    border-radius: 20px;
+    background-color: red;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+footer>p{
+    margin: 0px;
+    text-align: center;
+}

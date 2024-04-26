@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Primary: #5271fe;
+    --secundary: #7c93fb;
+    --tertiary: #b7c4fe;
+    
+    --dark-blue: #1c2656;
+    --dark: #000;
+    --dark-secondary: #333;
+
+}
+
+/* styles to tag´s */
+body{
+    background-color: var(--dark-secondary);
+}
+
+header{
+    background-color: var(--Primary);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+main{
+    background-color: var(--Primary);
+    border-radius: 1em;
+    padding: 2em;
+    /* tamanho */
+    display: grid;
+    gap: 2em;
+}
+
+aside{
+    background-color: var(--secundary);
+    border-radius: 1em;
+    padding: 2em;
+    /* tamanho */
+    flex: 1;
+}
+
+article{
+    background-color: var(--secundary);
+    border-radius: 1em;
+    padding: 2em;
+    flex:1;
+    /* add flex */
+    display: grid;
+    gap: 2em;
+}
+
+article section{
+    background-color: var(--tertiary);
+    border-radius: 1em;
+    padding: 2em;   
+}
+
+section{
+    background-color: var(--secundary);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+footer{
+    background-color: var(--Primary);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+/* style to class */
+
+.init{
+    display: grid;
+    
+    padding: 2em;
+    gap: 2em;
+
+
+}
+
+.main-body{
+    display: flex;
+    gap: 2em;
+}
